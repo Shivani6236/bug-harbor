@@ -1,8 +1,8 @@
 const express = require('express');
-const { issueTrackerPage, createProject, addProjectToMongoDB, projectDetails, filterProjectDetails, createAnIssue, addAnIssue } = require('../controller/issueController');
+const { bugHarborPage, createProject, addProjectToMongoDB, projectDetails, filterProjectDetails, createAnIssue, addAnIssue } = require('../controller/issueController');
 const router = express.Router();
 
-router.get('/', issueTrackerPage)
+router.get('/', bugHarborPage)
 router.get('/createProject', createProject)
 router.post('/addProject',addProjectToMongoDB)
 router.get('/projectDetails', projectDetails)
