@@ -3,17 +3,17 @@
 <section class="createProjectSection">
     <form class="createProjectForm" action="/bugHarbor/createAnIssue/<%= issueId.id %>/addIssue" method="post">
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Issue Title</label>
+            <label for="exampleFormControlInput1" class="form-label">Bug Title</label>
             <input type="text" name="issueName" class="form-control" id="exampleFormControlInput1" placeholder="Enter Issue Title">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Issue Description</label>
+            <label for="exampleFormControlTextarea1" class="form-label">Bug Description</label>
             <textarea name="issueDescription" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Issue Description"></textarea>
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Issue Author</label>
+            <label for="exampleFormControlInput1" class="form-label">Bug Author</label>
             <input type="text" name="authorName" class="form-control" id="exampleFormControlInput1" placeholder="Enter Author Name">
         </div>
-        <button type="submit" class="btn btn-danger w-100 my-3">Create Issue</button>
+        <button type="submit" class="btn btn-danger w-100 my-3">Create Bug</button>
     </form>
 </section>
