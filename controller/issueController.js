@@ -48,11 +48,11 @@ function filterBy(filter, projectDetails) {
 
 }
 
-module.exports.issueTrackerPage = async (req, res) => {
+module.exports.bugHarborPage = async (req, res) => {
     const collection = await mongoDB();
     const addedProject = await collection.find({ id: 'addedProject' }).toArray();
-    return res.render('issueTracker', {
-        title: "Issue Tracker",
+    return res.render('bugHarbor', {
+        title: "Bug Harbor",
         addedProject
     })
 }
@@ -73,7 +73,7 @@ module.exports.addProjectToMongoDB = async (req, res) => {
         else if (data)
             console.log('data inserted')
     });
-    res.redirect('/issueTracker')
+    res.redirect('/bugHarbor')
 }
 
 module.exports.projectDetails = async (req, res) => {
@@ -116,5 +116,5 @@ module.exports.addAnIssue = async (req, res) => {
     const bugId = req.params.id;
     const collection = await mongoDB();
     await collection.findOneAndUpdate({ _id: ObjectId(bugId) }, { '$push': { bugs: issue } });
-    res.redirect('/issueTracker/projectDetails')
+    res.redirect('/bugHarbor/projectDetails')
 }
