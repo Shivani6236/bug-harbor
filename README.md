@@ -1,4 +1,4 @@
-# issue-tracker
+# bug-harbor
 A full stack app, which helps to track issues/bugs for the Project.
 
 Site: https://issue-tracker-dumi.onrender.com
