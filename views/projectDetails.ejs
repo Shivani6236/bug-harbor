@@ -2,7 +2,7 @@
 
 
 <section id="filter">
-    <form id="navbar" action="/issueTracker/filterProjectDetails/" method="post">
+    <form id="navbar" action="/bugHarbor/filterProjectDetails/" method="post">
         <div class="form-check">
             <input class="form-check-input" type="radio" name="flexRadio" value="Project Title" id="flexRadio1"
                 required>
@@ -58,7 +58,7 @@
                     </div>
                     <% } %>
 
-                        <a href="/issueTracker/createAnIssue/<%= project._id %>" type="button" class="btn mt-4"
+                        <a href="/bugHarbor/createAnIssue/<%= project._id %>" type="button" class="btn mt-4"
                             style="background-color: rgb(250, 20, 20) ;color:azure;">+ Raise
                             an Issue</a>
         </div>
