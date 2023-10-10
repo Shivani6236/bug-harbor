@@ -1,7 +1,7 @@
 # bug-harbor
 A full stack app, which helps to track issues/bugs for the Project.
 
-Site: https://issue-tracker-dumi.onrender.com
+Site: https://bug-harbor.onrender.com
 
 ### Description
 
