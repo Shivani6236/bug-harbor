@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const issueTrackerPath = require('./issueTracker')
+const bugHarborPath = require('./bugHarbor')
 
-router.get('/', (req,res)=>{res.redirect('/issueTracker')})
+router.get('/', (req,res)=>{res.redirect('/bugHarbor')})
 
-router.use('/issueTracker', issueTrackerPath)
+router.use('/bugHarbor', bugHarborPath)
 
 module.exports = router;
